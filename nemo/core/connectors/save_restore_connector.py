@@ -35,7 +35,8 @@ class SaveRestoreConnector:
     def __init__(self) -> None:
         self._model_config_yaml = "model_config.yaml"
         self._model_weights_ckpt = "model_weights.ckpt"
-        self._model_extracted_dir = None
+        #self._model_extracted_dir = None
+        self._model_extracted_dir = "/home/ylli/projects/ParalleledLM/tmp/tp2"
 
     def save_to(self, model, save_path: str):
         """
